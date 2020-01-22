@@ -16,10 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web") {
-        exclude("org.springframework.boot", "spring-boot-starter-tomcat")
-    }
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
